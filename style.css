@@ -1,0 +1,69 @@
+:root {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  /* ↓ Flexboxを使って中央揃えと要素間のスペースを調整 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* 要素間の余白 */
+}
+
+h1 {
+  font-size: 2.5rem; /* タイトルも少し大きく */
+}
+
+#zoro {
+  font-size: 8rem; /* 数字をさらに大きく */
+  font-weight: bold;
+  color: #333;
+  line-height: 1;
+}
+
+#result {
+  font-size: 2rem; /* 結果表示を大きく */
+  min-height: 3rem; /* 結果が表示されてもレイアウトが崩れないように高さを確保 */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  /* ↓ ボタンのサイズを大きく */
+  padding: 1em 2em;
+  font-size: 1.5rem; 
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+/* ↓ disabled状態のスタイルを追加 */
+button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
